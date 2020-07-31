@@ -31,6 +31,7 @@ def get_japanese_emoticon(file_path, emoticon)
       return e_and_j_emoji[:japanese]
     end
   end
+  "Sorry, that emoticon was not found"
 end
 
 # def get_japanese_meaning (file_path, emoticon)
