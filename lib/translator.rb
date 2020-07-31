@@ -13,10 +13,11 @@ final_hash
 end
 
 def get_english_meaning(file_path, emoticon)
-library=load_library(file_path)
-library.each do |english_name,inner_hash
-  
-binding.pry
+  library=load_library(file_path)
+  library.each do |english_name,e_and_j_emoji|
+  if e_and_j_emoji[:japanese]==emoticon
+    return english_name
+    end
   end
 end
 
