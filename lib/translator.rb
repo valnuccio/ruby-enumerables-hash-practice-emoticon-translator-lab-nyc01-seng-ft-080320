@@ -14,7 +14,8 @@ end
 
 def get_english_meaning(file_path, emoticon)
 library=load_library(file_path)
-library.each do |key,value|
+library.each do |english_name,inner_hash
+  
 binding.pry
   end
 end
