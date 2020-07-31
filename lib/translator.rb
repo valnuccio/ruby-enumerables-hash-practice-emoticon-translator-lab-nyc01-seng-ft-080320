@@ -13,17 +13,8 @@ final_hash
 end
 
 def get_english_meaning(file_path, emoticon)
-  library=load_library(file_path)
-  library.each do |key,value|
-    value.each do |language,image|
-      if image==emoticon
-        return library[key]
-    binding.pry
-    if value==emoticon
-      return key
-      end
-    end
-    end
+library=load_library(file_path)
+binding.pry
   end
 
 # def get_japanese_meaning (file_path, emoticon)
